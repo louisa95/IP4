@@ -1,0 +1,9 @@
+.jumbotron{
+  background-color:green;
+  text-align: center;
+}
+
+#body{
+  background-image: url("../images/dice.img")
+  
+}
