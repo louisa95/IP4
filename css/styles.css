@@ -11,9 +11,16 @@
   background-image: url("../images/dice.img");
   padding: 0%;
   margin: 0%;
+  width: 100%;
+  height:100%;
   
   
 }
+
+
+h1{
+  color: red;
+}
 #player1{
-  color: white;
+  background-color:red;
 }
