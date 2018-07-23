@@ -18,7 +18,7 @@ Let people know what to do if they run into any issues or have questions, ideas 
 #### Installation
 [Pig Dice Game](https://louisa95.github.io/IP4/)
 #### Link
-()
+(https://github.com/louisa95/IP4)
 
 #### License
 This software is licensed under the MIT license. Copyright (c) {2018} {Louisa Saruni Konchellah}
