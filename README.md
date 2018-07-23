@@ -15,8 +15,10 @@ HTML CSS Bootstrap JavaScript jQuery
 
 #### Support and contact details
 Let people know what to do if they run into any issues or have questions, ideas or concerns. Encourage them to contact you or make a contribution to the code.
+#### Installation
+[Pig Dice Game](https://louisa95.github.io/IP4/)
 #### Link
-[Pig Dice Game]()
+()
 
 #### License
 This software is licensed under the MIT license. Copyright (c) {2018} {Louisa Saruni Konchellah}
