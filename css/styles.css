@@ -1,11 +1,18 @@
-.jumbotron{
-  background-color: yellow;
+#jumbotron{
+  background-image: url("../images/plated.jpg");
+  background-position: 100%;
+  background-position-x: bottom;
   text-align: center;
-  padding: 0%;
+  padding: 8%;
   margin: 0%;
-
-
+  color:brown;
+  text-decoration-line: underline;
+  height: 80px;
+  font-weight: bold;
+  font-size: 150px;
+  
 }
+
 
 #body{
   background-image: url("../images/dice.img");
@@ -17,10 +24,51 @@
   
 }
 
+#new-game{
+  background-color:black;
+  color :aqua;
 
-h1{
-  color: red;
 }
-#player1{
-  background-color:red;
+
+ #player1-roll {
+   background-color:brown;
+   color :aqua;
+}
+
+#player1-hold{
+  background-color:brown;
+  color: aqua;
+}
+
+
+#player2-roll {
+  background-color:brown;
+  color :aqua;
+}
+
+#player2-hold{
+ background-color: brown;
+ color: aqua;
+}
+
+#start{
+  background-color: black;
+  color:aqua;
+}
+#player-1{
+ color:brown; 
+}
+
+#player-2{
+  color:brown; 
+
+ }
+ .container{
+   background-color: gray;
+   padding: 0%;
+   margin: 0%
+
+ }
+#jumbo1{
+ background-color: gray;
 }

@@ -1,16 +1,16 @@
-var player1="";
-var player2="";
+ var player1="";
+ var player2="";
 
 var throwdice = function () {
   return Math.floor(6*Math.random())+1;
 }
 
-function Player(turn) {
+function Player(turn, playerName) {
   this.roll = 0;
   this.tempscore = 0;
   this.totalscore = 0;
   this.turn = turn;
-  this.playerName;
+  this.playerName = playerName;
 }
 
 
@@ -29,7 +29,7 @@ Player.prototype.hold = function () {
   this.totalscore += this.tempscore;
   this.tempscore = 0;
   // this.changeturn();
-  alert(this.playerName + ", your turn is over, pass to next player!");
+  alert(this.playerName + "Your turn is over, pass to next player!");
 }
 
 
@@ -54,22 +54,27 @@ var clearValues = function(){
 // User Interface
 $(document).ready(function() {
 
-  $("button#start").click(function(event){
+
+
+  $("#start").click(function(event){
     player1 = new Player(true);
     player2 =  new Player(false);
     $(".player-console").show();
-    $(".start-menu").hide();
+    // $(".start-menu").hide();
+
+    player1.playerName = player1Name;
+    player2.playerName = player2Name;
 
     var player1Name = $(".player1Name").val();
-    $("#player1Name").text(player1Name);
+    $("#player1Name").text(player1Name); // check
 
     var player2Name = $(".player2Name").val();
-    $("#player2Name").text(player2Name);
+    $("#player2Name").text(player2Name); // check
 
-    player1.playerName=player1Name;
-    player2.playerName=player2Name;
+    player1 = new Player(true, player1Name)
 
   });
+  
   $("button#new-game").click(function(event){
     $(".player-console").hide();
     clearValues();
@@ -82,7 +87,7 @@ $(document).ready(function() {
     $("#total-score-2").empty();
     $("#die-roll-2").empty();
 
-    $(".start-menu").show();
+    // $(".start-menu").show();
   });
 
   $("button#player1-roll").click(function(event){
